@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/finished_activity_layout"
+    tools:context=".FinishedRevisionActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="24dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_gravity="top"
+            android:textStyle="bold"
+            android:text="Revision Completed Successfully!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="75dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How well do You think, you understood this topic?"/>
+
+
+        <ImageView
+            android:layout_gravity="center|left"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="48dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_emoji_not_so_well"
+            android:onClick="onEmojiClick"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_emoji_very_well"
+            android:onClick="onEmojiClick"/>
+
+        <ImageView
+            android:layout_gravity="center|right"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="48dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_emoji_nothing_at_all"
+            android:onClick="onEmojiClick"/>
+
+        <Button
+            android:onClick="onPracticeClick"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="60dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@drawable/custom_button_grey"
+            android:text="Practice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="onContinueClick"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="24dp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button"
+            android:text="Continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>

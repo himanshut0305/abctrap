@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_activity_layout"
+    android:background="@drawable/gradient_background_red"
+    tools:context=".SplashActivity">
+
+    <com.qedplus.particlesTeacher.extras.StarAnimationView
+        android:id="@+id/animated_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_alignParentTop="true" />
+
+    <android.support.constraint.ConstraintLayout
+        android:background="#77000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.32360679775"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_logo"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:background="@drawable/splash_school_code_background"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_gravity="bottom"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="monospace"
+            android:textColor="@color/grey"
+            android:text="Enter the 6 digit school code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:weightSum="6"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et1"
+                android:hint="S"
+                android:textColor="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:hint="C"
+                android:textColor="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:hint="H"
+                android:textColor="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:hint="L"
+                android:textColor="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et5"
+                android:hint="C"
+                android:textColor="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et6"
+                android:hint="D"
+                android:textColor="@color/white"
+                android:inputType="textCapCharacters"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

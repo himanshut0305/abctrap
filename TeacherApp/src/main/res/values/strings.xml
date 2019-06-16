@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">QED Teacher</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Learn</string>
+    <string name="slide_1_desc">Personalized learning journeys designed to provide complete coverage of class syllabus</string>
+
+    <string name="slide_2_title">Revise</string>
+    <string name="slide_2_desc">Revision and practice sessions to perfect the understanding of concepts</string>
+
+    <string name="slide_3_title">Test</string>
+    <string name="slide_3_desc">Practice to perfection with topic wise tests customized to the learning requirement of every schoolBO</string>
+
+    <string name="slide_4_title">Analyse</string>
+    <string name="slide_4_desc">In-depth analysis based on tests and personalised learning paths adopted by the student</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_topics">TopicsActivity</string>
+    <string name="large_text"></string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="performance_card_string">Weak in "<b>"1"</b>" Subject\n"<b>"4"</b>" Chapters need practice\n"<b>"12"</b>" Topics need attention</string>
+
+
+    <string name="ch1_top1_slide1_para1">You know that when an object changes it\'s position with time then it\'s in "<b>"motion"</b>" otherwise it\'s in "<b>"rest"</b>".</string>
+    <string name="ch1_top1_slide2_para1">Motion and Rest are "<b>"relative terms"</b>". Relative means with respect to each other.</string>
+    <string name="ch1_top1_slide2_para2">As the earth is rotating - so is your home, but it\'s not moving with respect to you so it is in rest. But if someone looks from the moon then with respect to him it\'s in motion.</string>
+    <string name="ch1_top1_slide3_para1">An object is treated as "<b>"point object"</b>" if the size of the object is much smaller than distance traveled by it in a reasonable time.\n\nIf object "<font color='#EE0000'>"moves in straight line"</font>" then it's "<b>"Rectilinear motion"</b>". </string>
+    <string name="ch1_top1_slide4_para1">"<b>"Scalar"</b>" means "<font color='#EE0000'>"only magnitude"</font>" and "<b>"Vector"</b>" means "<font color='#EE0000'>"both direction and magnitude"</font>".</string>
+    <string name="ch1_top1_slide5_para1">"<b>"Distance"</b>" is length or "<font color='#EE0000'>"distance traveled"</font>" and is a "<b>"Scalar"</b>" quantity.\n\n"<b>"Displacement"</b>" is the "<font color='#EE0000'>"shortest distance between two points"</font>" along with its direction and is thus a "<b>"Vector"</b>" quantity.</string>
+</resources>

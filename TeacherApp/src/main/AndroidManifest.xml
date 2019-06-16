@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qedplus.particlesTeacher"
+    android:versionCode="4">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden"
+        android:theme="@style/BlackAndWhiteAppTheme">
+
+        <service android:name="com.qedplus.particlesTeacher.extras.UpdaterServiceManager" />
+        <activity android:name="com.qedplus.particlesTeacher.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name="com.qedplus.particlesTeacher.DataDownloaderActivity" />-->
+        <activity android:name="com.qedplus.particlesTeacher.LoginActivity" />
+        <!--<activity android:name="com.qedplus.particlesTeacher.MainActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.TopicsActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.SettingsActivity" />-->
+        <!--<activity-->
+            <!--android:name="com.qedplus.particlesTeacher.RevisionActivity"-->
+            <!--android:theme="@style/RedOnRedAppTheme" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.FinishedRevisionActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.ConfirmActivity" />-->
+        <!--<activity-->
+            <!--android:name="com.qedplus.particlesTeacher.AnalysisActivity"-->
+            <!--android:theme="@style/RedOnRedAppTheme" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.BadgeActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.CheckingActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.AnnouncementActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.PracticeTestActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.FAQActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.BookmarkActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.DailyReportActivity" />-->
+        <activity android:name="com.qedplus.particlesTeacher.TeacherActivity" />
+        <!--<activity android:name="com.qedplus.particlesTeacher.DumpActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.FinishedTestActivity" />-->
+        <!--<activity android:name="com.qedplus.particlesTeacher.QPTStartActivity" />-->
+    </application>
+
+</manifest>

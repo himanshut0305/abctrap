@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="18dp"
+    android:text="There are no more question left for this topic to practice. We apologise for the inconvenience. We would resolve this issue in the shortest possible time.\n\nWe here at QED are tirelessly working towards adding more and more content for you to learn and practice and to enhance your overall user experience."/>

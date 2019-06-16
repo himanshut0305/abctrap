@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/qr_action_button_icon_revised_circle">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <stroke android:color="#f44336" android:width="1dp" />
+            <corners android:radius="35dp" />
+            <solid android:color="#fff" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+    <item android:id="@+id/qr_action_button_icon_revised_icon">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24.0"
+            android:viewportHeight="24.0">
+            <path
+                android:fillColor="#f44336"
+                android:pathData="M8,5v14l11,-7z"/>
+        </vector>
+    </item>
+</layer-list>
