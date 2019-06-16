@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qedplus.particles"
+    android:versionCode="4">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden"
+        android:theme="@style/BlackAndWhiteAppTheme">
+
+        <service android:name=".extras.UpdaterServiceManager" />
+        <service android:name=".extras.DownloadServiceManager" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".DataDownloaderActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".TopicsActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".RevisionActivity"
+            android:theme="@style/RedOnRedAppTheme" />
+        <activity android:name=".FinishedRevisionActivity" />
+        <activity android:name=".ConfirmActivity" />
+        <activity
+            android:name=".AnalysisActivity"
+            android:theme="@style/RedOnRedAppTheme" />
+        <activity android:name=".BadgeActivity" />
+        <activity android:name=".CheckingActivity" />
+        <activity android:name=".AnnouncementActivity" />
+        <activity android:name=".PracticeTestActivity" />
+        <activity android:name=".FAQActivity" />
+        <activity android:name=".BookmarkActivity" />
+        <activity android:name=".DailyReportActivity" />
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".SyllabusActivity" />
+        <activity android:name=".DumpActivity" />
+        <activity android:name=".FinishedTestActivity" />
+        <activity android:name=".QPTStartActivity" />
+    </application>
+
+</manifest>

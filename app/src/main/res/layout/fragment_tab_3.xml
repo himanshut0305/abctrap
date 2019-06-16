@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:text="Acceleration"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@+id/name_1"
+            android:layout_marginTop="10dp"
+            android:text="QPT Score: 26%;"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@+id/score_1"
+            android:layout_marginTop="4dp"
+            android:text="Practice Time: less than 2 Minutes"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@+id/time_1"
+            android:layout_marginTop="4dp"
+            android:text="Projection: FAIL"
+            android:textColor="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:text="Circular Motion"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/score_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@+id/name_2"
+            android:layout_marginTop="10dp"
+            android:text="QPT Score: 22%;"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@+id/score_2"
+            android:layout_marginTop="4dp"
+            android:text="Practice Time: less than 3 Minutes"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:layout_below="@+id/time_2"
+            android:layout_marginTop="4dp"
+            android:text="Projection: FAIL"
+            android:textColor="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/name_3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="Topic Name for subject"-->
+            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/score_3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/name_3"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="QPT Score: 26%;"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/time_3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/score_3"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:text="Practice Time: less than 2 Minutes"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/time_3"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:text="Projection: FAIL"-->
+            <!--android:textColor="@android:color/holo_red_dark" />-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/name_6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="Topic Name for subject"-->
+            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/score_6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/name_6"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="QPT Score: 26%;"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/time_6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/score_6"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:text="Practice Time: less than 2 Minutes"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/open_sans"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_below="@+id/time_6"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:text="Projection: FAIL"-->
+            <!--android:textColor="@android:color/holo_red_dark" />-->
+    <!--</RelativeLayout>-->
+</LinearLayout>

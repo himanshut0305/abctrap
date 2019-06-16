@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="12dp">
+    <TextView
+        android:id="@+id/report_subject_name"
+        android:fontFamily="@font/open_sans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Physics"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/report_subject_performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/report_subject_name"
+        android:text="12% ahead of class"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/report_subject_details_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:onClick="onAnalysisClick"
+        android:text="Details"/>
+
+</RelativeLayout>

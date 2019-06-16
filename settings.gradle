@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include ':TeacherApp'
+=======
+include ':app'
+>>>>>>> 5a022dc5ac2f39f812baa90b8342fdd1c4b185fd
