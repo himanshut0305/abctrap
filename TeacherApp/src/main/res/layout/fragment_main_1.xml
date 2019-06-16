@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:orientation="vertical"
+    android:background="#eceff1"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/science_card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="150dp"
+            android:tag="SCIENCE"
+            android:elevation="4dp"
+            android:onClick="onSubjectClick"
+            card_view:cardCornerRadius="4dp">
+
+            <FrameLayout
+                android:id="@+id/temp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_image_science"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Science"/>
+
+                <ImageView
+                    android:id="@+id/new_science_chapters_indicator"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_gold"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/temp2"
+                android:visibility="gone"
+                android:rotationX="180"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/name_5"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="PHYSICS"
+                    android:text="Physics"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="CHEMISTRY"
+                    android:text="Chemistry"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="BIOLOGY"
+                    android:text="Biology"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="EVS"
+                    android:text="Evironmental Science"
+                    android:onClick="onSubjectClick"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="150dp"
+            android:elevation="4dp"
+            card_view:cardCornerRadius="4dp">
+            <FrameLayout
+                android:id="@+id/announcement_card_layout"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_width="36dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_notification" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/announcement_heading"
+                        android:text="System Admin"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="18dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/announcement_text"
+                        android:text="The app is downloading the requisite data. Please do not click on any 'Download' buttons until this message is visible."
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="12dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:scrollHorizontally="true"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/announcement_date"
+                        android:text="June 15, 2019"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="12dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:scrollHorizontally="true"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/announcement_ok_button"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="#22000000"
+                    android:textColor="@color/white"
+                    android:layout_width="64dp"
+                    android:layout_height="40dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:text="OK"
+                    style="@style/Base.Widget.AppCompat.Button.Small" />
+            </FrameLayout>
+            <FrameLayout
+                android:visibility="gone"
+                android:background="@color/black"
+                android:id="@+id/no_more_announcement_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="top"
+                    android:layout_marginTop="66dp"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Announcement"/>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mathematics_card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="150dp"
+            android:elevation="4dp"
+            android:tag="MATHS"
+            android:onClick="onSubjectClick"
+            card_view:cardCornerRadius="4dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_image_mathematics"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mathematics"/>
+
+                <ImageView
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_gold"/>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/social_science_card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="150dp"
+            android:tag="SSC"
+            android:elevation="4dp"
+            android:onClick="onSubjectClick"
+            card_view:cardCornerRadius="4dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_image_social_science"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Social Science"/>
+            </FrameLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:rotationX="180"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="HISTORY"
+                    android:text="History"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="CIVICS"
+                    android:text="Civics"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="GEOGRAPHY"
+                    android:text="Geography"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="ECONOMICS"
+                    android:text="Economics"
+                    android:onClick="onSubjectClick"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hindi_card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="150dp"
+            android:elevation="4dp"
+            android:tag="HINDI"
+            android:onClick="onSubjectClick"
+            card_view:cardCornerRadius="4dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_image_hindi"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"/>
+
+                <ImageView
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_gold"/>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/english_card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="150dp"
+            android:elevation="4dp"
+            android:tag="ENGLISH"
+            android:onClick="onSubjectClick"
+            card_view:cardCornerRadius="4dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/card_image_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English Literature and Grammar"/>
+
+                <ImageView
+                    android:id="@+id/new_english_chapters_indicator"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/star_gold"/>
+            </FrameLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:rotationX="180"
+                android:orientation="vertical"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="PROSE"
+                    android:text="Prose"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="POETRY"
+                    android:text="Poetry"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="DRAMA"
+                    android:text="Drama"
+                    android:background="@drawable/border_white_bottom"
+                    android:onClick="onSubjectClick"/>
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="37.5dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center|left"
+                    android:tag="GRAMMAR"
+                    android:text="Grammar"
+                    android:onClick="onSubjectClick"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

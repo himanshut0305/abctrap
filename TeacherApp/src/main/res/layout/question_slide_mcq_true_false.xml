@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <katex.hourglass.in.mathlib.MathView
+        android:id="@+id/question_text_view"
+        android:fontFamily="@font/open_sans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:text="If you are seeing this, there is something wrong with the app. Apparently, the monkeys at QED are not as well trained as we thought.
+
+\n\nWould you help us out and report this to support@qedtech.co.in with a screenshot so that we can fix this asap?"/>
+
+    <TextView
+        android:id="@+id/instruction_text_view"
+        android:fontFamily="@font/inconsolata"
+        android:textColor="@color/pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select True or False"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/btn_true_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_white"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:text="True" />
+
+        <TextView
+            android:id="@+id/btn_false_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_white"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:text="False" />
+    </LinearLayout>
+
+</LinearLayout>

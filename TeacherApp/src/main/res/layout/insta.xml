@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/instagram_post"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:background="#101010"
+        android:layout_width="360dp"
+        android:layout_height="360dp" >
+        <FrameLayout
+            android:background="@drawable/ic_badge_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Awarded to Jiten Sharma"/>
+
+            <ImageView
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bree"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="40dp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/badge_planet" />
+
+            <ImageView
+                android:id="@+id/school_logo_image"
+                android:layout_marginTop="75dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="-13dp"
+                android:layout_marginBottom="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:src="@drawable/school_logo_ccs"/>
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#606060"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/open_sans"
+                    android:textAlignment="center"
+                    android:text="Made By" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="14dp"
+                    android:text="QED Technologies LLC"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>
