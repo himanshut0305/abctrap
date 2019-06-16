@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyReportActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/BlackAndWhiteAppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/BlackAndWhiteAppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey_bottom"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/teacher_subject_list_item_layout">
+
+                <TextView
+                    android:id="@+id/subject_text_view"
+                    android:text="Physics"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/current_chapter_text_view"
+                    android:text="Chapter 1 - Motion"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/subject_text_view"/>
+
+
+                <TextView
+                    android:id="@+id/current_topic_text_view"
+                    android:text="Introduction"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/current_chapter_text_view"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey_bottom"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/subject_text_view2"
+                    android:text="Chemistry"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/current_chapter_text_view2"
+                    android:text="Chapter 1 - Structure of Atom"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/subject_text_view2"/>
+
+
+                <TextView
+                    android:id="@+id/current_topic_text_view2"
+                    android:text="Introduction"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/current_chapter_text_view2"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey_bottom"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/subject_text_view3"
+                    android:text="Biology"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/current_chapter_text_view3"
+                    android:text="Chapter 1 - Cell Structure"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/subject_text_view3"/>
+
+                <TextView
+                    android:id="@+id/current_topic_text_view3"
+                    android:text="Introduction"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/current_chapter_text_view3"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey_bottom"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/subject_text_view4"
+                    android:text="Mathematics"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/current_chapter_text_view4"
+                    android:text="Chapter 2 - Polynomials"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/subject_text_view4"/>
+
+
+                <TextView
+                    android:id="@+id/current_topic_text_view4"
+                    android:text="Zeroes of Polynomials"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/current_chapter_text_view4"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey_bottom"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                <TextView
+                    android:id="@+id/subject_text_view5"
+                    android:text="English - Drama"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/current_chapter_text_view5"
+                    android:text="Julius Ceaser"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/subject_text_view5"/>
+
+
+                <TextView
+                    android:id="@+id/current_topic_text_view5"
+                    android:text="Act 1, Scene 1"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/current_chapter_text_view5"/>
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

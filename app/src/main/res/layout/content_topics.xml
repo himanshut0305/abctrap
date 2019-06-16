@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_topics"
+    tools:context=".TopicsActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:id="@+id/toc_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/subject_content_download_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_file_download_black_24dp"
+                android:onClick="onContentDownloadClick"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No content was available for this subject till the last automatic update. Click the Download button above to check for an update manually"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

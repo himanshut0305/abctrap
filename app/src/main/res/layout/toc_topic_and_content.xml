@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toc_topic_and_content_frame_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/toc_topic_and_content_play_button"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="start"
+        android:elevation="2dp"
+        android:background="@drawable/qr_action_button_icon_revised" />
+
+    <TextView
+        android:id="@+id/toc_topic_and_content_topic_name_text_view"
+        android:text="Topic Name Longer than Usual and even Longer"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="54dp"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="10dp"
+        android:layout_height="52dp"
+        android:background="@drawable/toc_vertical_path_dotted" />
+
+    <TextView
+        android:id="@+id/toc_topic_and_content_topic_content_text_view"
+        android:text="Topic Description"
+        android:textSize="14dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+</FrameLayout>

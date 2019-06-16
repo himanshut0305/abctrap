@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/diagram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/diagram_distance_and_displacement"/>
+
+    <TextView
+        android:id="@+id/diagram_caption"
+        android:textSize="16dp"
+        android:padding="16dp"
+        android:text="Diagram Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintTop_toBottomOf="@id/diagram"/>
+
+</android.support.constraint.ConstraintLayout>
